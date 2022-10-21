@@ -1,21 +1,20 @@
 #include <iostream>
 
 using namespace std;
-class Car{
-  public:
-     int price;
-     string model;
+class salary{
+private:
+    int salary;
 
-Car(int p,string m);
-};
-Car::Car(int p,string m){
-    price=p;
-    model=m;}
+public:
+    void setsalary(int s){
+    salary=s;}
+    int getsalary(){
+    return salary;}};
+
 int main()
 {
-
-    Car obj(300000,"honda");
-
-    cout <<obj.price << "  "<<obj.model<<endl;
+    salary obj;
+    obj.setsalary(50000);
+    cout <<obj.getsalary()<< endl;
     return 0;
 }
