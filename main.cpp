@@ -1,21 +1,21 @@
 #include <iostream>
 
 using namespace std;
-class myclass{
- public:
+class Car{
+  public:
+     int price;
      string model;
-     string name;
-     int age;
-     myclass( string x, string y, int g){
-   model=x;
-   name=y;
-  age=g;}
-     };
+
+Car(int p,string m);
+};
+Car::Car(int p,string m){
+    price=p;
+    model=m;}
 int main()
 {
-myclass myobj("salalal","sally",32);
 
+    Car obj(300000,"honda");
 
-   cout<<myobj.model<<"  "<<myobj.name<<"  "<<myobj.age<<endl;
+    cout <<obj.price << "  "<<obj.model<<endl;
     return 0;
 }
